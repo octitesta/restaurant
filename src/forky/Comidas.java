@@ -59,7 +59,7 @@ public class Comidas extends javax.swing.JFrame {
                 {"Brownie", "100"},
                 {"Helado", "70"},
                 {"Torta", "100"},
-                {"Tiramisu", null},
+                {"Tiramisu", "90"},
                 {"Flan", "90"}
             },
             new String [] {
