@@ -1,0 +1,7 @@
+Gaseosa-50
+Cerveza-80
+Vino-100
+Agua Mineral-40
+Agua con gas-40
+Coca Cola-50
+Fernet-150

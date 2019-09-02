@@ -11,9 +11,9 @@ package forky;
  */
 public class Alimento {
     private String nombre;
-    private double precio;
+    private int precio;
 
-    public Alimento(String nombre, double precio) {
+    public Alimento(String nombre, int precio) {
         this.nombre = nombre;
         this.precio = precio;
     }
@@ -30,9 +30,15 @@ public class Alimento {
         return precio;
     }
 
-    public void setPrecio(double precio) {
+    public void setPrecio(int precio) {
         this.precio = precio;
     }
+
+    @Override
+    public String toString() {
+        return "Alimento: " + "Nombre:" + nombre + ", Precio: " + precio;
+    }
+    
     
     
     

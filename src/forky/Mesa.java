@@ -23,6 +23,11 @@ public class Mesa {
     public void setNumerodemesa(int numerodemesa) {
         this.numerodemesa = numerodemesa;
     }
+
+    @Override
+    public String toString() {
+        return "Mesa = " + numerodemesa;
+    }
     
     
     

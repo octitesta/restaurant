@@ -1,0 +1,8 @@
+Milanesa-150
+Hamburguesa-130
+Pizza-150
+Lomito-200
+Pancho-100
+Choripan-150
+Ensalada-100
+Papas Fritas-100

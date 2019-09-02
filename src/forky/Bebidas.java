@@ -3,49 +3,41 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package forky;
 
-import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.table.DefaultTableModel;
 
 /**
  *
  * @author octa
  */
-public class Comidas extends javax.swing.JFrame {
-
-    /**
-     * Creates new form Comidas
-     */
-    private ArrayList<Alimento> alimentos;
+public class Bebidas extends javax.swing.JFrame {
+    private ArrayList<Alimento> bebidas;
     private DefaultTableModel dtm;
     private DefaultTableModel dtm2;
-    //private Pedidos mozo;
     
     
-    
-    public Comidas() {
+
+    /**
+     * Creates new form Bebidas
+     */
+    public Bebidas() {
         initComponents();
         setBounds(580 , 0 , 435, 366);
         setVisible(true);
         setResizable(false);
         
-        alimentos = new ArrayList<Alimento>();
+        bebidas = new ArrayList<Alimento>();
         
-
         List<String> readAllLines = new ArrayList<>();
         try {
-            readAllLines = Files.readAllLines(new File("./src/forky/alimentos.txt").toPath());
+            readAllLines = Files.readAllLines(new File("./src/forky/bebidas.txt").toPath());
             
         } catch (IOException ex) {
             System.out.println(ex);
@@ -58,27 +50,19 @@ public class Comidas extends javax.swing.JFrame {
             String part2 = parts[1];
             //System.out.println(part2);
             int variable = Integer.parseInt(part2);
-            Plato b = new Plato(part1, variable);
-            alimentos.add(b);
+            Bebida b = new Bebida(part1, variable);
+            bebidas.add(b);
             
         }
         
-        //Acá van a tener el array con los alimentos
         dtm = new DefaultTableModel();
         dtm.setColumnIdentifiers(new Object[]{"Nombre", "Precio"});
-        for (int i = 0; i < alimentos.size(); i++) {
-            Alimento a = alimentos.get(i);
+        for (int i = 0; i < bebidas.size(); i++) {
+            Alimento a = bebidas.get(i);
             dtm.addRow(new Object[]{a.getNombre(), a.getPrecio()});
-            
-        }
-        comidas1.setModel(dtm);}
-    
-    //para llenar la tabla
-    //DefaultTableModel dtm = new DefaultTableModel();
-    //for each(a : alimentos) {
-    // dtm.add(a);
-    // }
-    // jtable1.setModel(dtm);
+    }
+        bebidas1.setModel(dtm);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -92,7 +76,7 @@ public class Comidas extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        comidas1 = new javax.swing.JTable();
+        bebidas1 = new javax.swing.JTable();
         salir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -100,10 +84,10 @@ public class Comidas extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(165, 200, 254));
 
         jLabel1.setFont(new java.awt.Font("Purisa", 1, 24)); // NOI18N
-        jLabel1.setText("Platos");
+        jLabel1.setText("Bebidas");
 
-        comidas1.setForeground(new java.awt.Color(1, 1, 1));
-        comidas1.setModel(new javax.swing.table.DefaultTableModel(
+        bebidas1.setForeground(new java.awt.Color(4, 3, 1));
+        bebidas1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
@@ -111,13 +95,13 @@ public class Comidas extends javax.swing.JFrame {
                 "Alimento", "Precio"
             }
         ));
-        comidas1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        comidas1.addMouseListener(new java.awt.event.MouseAdapter() {
+        bebidas1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bebidas1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                comidas1MouseClicked(evt);
+                bebidas1MouseClicked(evt);
             }
         });
-        jScrollPane1.setViewportView(comidas1);
+        jScrollPane1.setViewportView(bebidas1);
 
         salir.setBackground(new java.awt.Color(217, 31, 20));
         salir.setFont(new java.awt.Font("URW Palladio L", 1, 15)); // NOI18N
@@ -154,7 +138,7 @@ public class Comidas extends javax.swing.JFrame {
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(33, 33, 33)
                 .addComponent(salir, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(60, Short.MAX_VALUE))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -173,44 +157,69 @@ public class Comidas extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
-        this.setVisible(false);
-    }//GEN-LAST:event_salirActionPerformed
-
-    private void comidas1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_comidas1MouseClicked
-        int fila = comidas1.getSelectedRow();
-        Object comida = comidas1.getValueAt(fila,0);
-        Object precio = comidas1.getValueAt(fila, 1);
+    private void bebidas1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_bebidas1MouseClicked
+        int fila = bebidas1.getSelectedRow();
+        Object comida = bebidas1.getValueAt(fila,0);
+        Object precio = bebidas1.getValueAt(fila, 1);
 
         Object moz = Pedidos.mozo.getSelectedItem();
         int mes = Pedidos.mesa.getSelectedIndex()+1;
-        
-        
-        
+
         Pedidos.dtm2.setColumnIdentifiers(new Object[]{"Mesa","Alimento" ,"Precio","Mozo"});
         Pedidos.dtm2.addRow(new Object[]{mes,comida,precio,moz});
-       
+
         Pedidos.jTable1.setModel(Pedidos.dtm2);
-        
-        
-        
-        
-        
-        
+
         //DefaultTableModel dtmNuevo = (DefaultTableModel ) jTable1.getModel();
         //dtm.setColumnIdentifiers(new Object[]{"Mesa", "Comida","Precio","Mozo"});
         //dtm.addRow(new Object[]{1,comida,precio,1});
         //jTable1.setModel(dtm);
-    }//GEN-LAST:event_comidas1MouseClicked
+    }//GEN-LAST:event_bebidas1MouseClicked
 
+    private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_salirActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Bebidas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Bebidas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Bebidas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Bebidas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Bebidas().setVisible(true);
+            }
+        });
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public static javax.swing.JTable comidas1;
+    public static javax.swing.JTable bebidas1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton salir;
     // End of variables declaration//GEN-END:variables
-
-    
 }

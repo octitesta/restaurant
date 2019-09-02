@@ -3,13 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/home/octa/Escritorio/Forky/src/forky/Entregas.java</file>
             <file>file:/home/octa/Escritorio/Forky/src/forky/MenuPrincipal.java</file>
+            <file>file:/home/octa/Escritorio/Forky/src/forky/Estadisticas.java</file>
             <file>file:/home/octa/Escritorio/Forky/src/forky/Factura.java</file>
-            <file>file:/home/octa/Escritorio/Forky/src/forky/Comidas.java</file>
+            <file>file:/home/octa/Escritorio/Forky/src/forky/Postres.java</file>
+            <file>file:/home/octa/Escritorio/Forky/src/forky/Ticket.java</file>
+            <file>file:/home/octa/Escritorio/Forky/src/forky/Postre.java</file>
             <file>file:/home/octa/Escritorio/Forky/src/forky/Alimento.java</file>
-            <file>file:/home/octa/Escritorio/Forky/src/forky/Forky.java</file>
+            <file>file:/home/octa/Escritorio/Forky/src/forky/Comidas.java</file>
             <file>file:/home/octa/Escritorio/Forky/src/forky/Pedidos.java</file>
-            <file>file:/home/octa/Escritorio/Forky/src/forky/Mesa.java</file>
+            <file>file:/home/octa/Escritorio/Forky/src/forky/Plato.java</file>
+            <file>file:/home/octa/Escritorio/Forky/src/forky/Bebidas.java</file>
+            <file>file:/home/octa/Escritorio/Forky/src/forky/Bebida.java</file>
         </group>
     </open-files>
 </project-private>

@@ -1,0 +1,80 @@
+26/7/2019;19:37;1;Vino;100.0;Andrea
+26/7/2019;19:37;1;Cerveza;80.0;Andrea
+26/7/2019;19:37;1;Gaseosa;50.0;Andrea
+26/7/2019;19:39;1;Pizza;150.0;Andrea
+26/7/2019;19:39;1;Hamburguesa;130.0; Andrea
+26/7/2019;19:39;1;Hamburguesa;130.0; Andrea
+26/7/2019; 22:43;1;Agua Mineral;40.0;Andrea
+26/7/2019; 22:43;1;Cerveza;80.0;Andrea
+27/7/2019; 0:17;5;Ensalada de Fruta;60.0;Eduardo
+27/7/2019; 0:17;5;Flan;80.0;Eduardo
+27/7/2019; 0:17;5;Agua con gas;40.0;Eduardo
+27/7/2019; 0:17;5;Agua con gas;40.0;Eduardo
+27/7/2019; 0:17;5;Ensalada;100.0;Eduardo
+27/7/2019; 0:17;5;Lomito;200.0;Eduardo
+27/7/2019; 0:21;3;Coca Cola;50.0;Andrea
+27/7/2019; 0:21;3;Coca Cola;50.0;Andrea
+27/7/2019; 0:21;3;Coca Cola;50.0;Andrea
+27/7/2019; 0:21;3;Fernet;150.0;Andrea
+27/7/2019; 8:6;4;Agua con gas;40.0;Octavio
+27/7/2019; 8:6;4;Agua Mineral;40.0;Octavio
+27/7/2019; 8:6;4;Choripan;150.0;Octavio
+27/7/2019; 8:6;4;Ensalada;100.0;Octavio
+27/7/2019; 8:6;4;Flan;80.0;Octavio
+27/7/2019; 8:13;4;Milanesa;150.0;Andrea
+27/7/2019; 8:13;4;Helado;80.0;Andrea
+27/7/2019; 8:17;1;Fernet;150.0;Licho
+27/7/2019;14:57;2;Helado;80.0;Facu
+27/7/2019;14:57;2;Flan;80.0;Facu
+27/7/2019;14:57;2;Flan;80.0;Facu
+27/7/2019;14:57;2;Ensalada de Fruta;60.0;Facu
+27/7/2019;14:57;2;Gelatina;40.0;Facu
+27/7/2019;14:57;2;Helado;80.0;Facu
+27/7/2019;14:57;2;Flan;80.0;Facu
+27/7/2019;14:57;2;Ensalada de Fruta;60.0;Facu
+27/7/2019;14:57;2;Gelatina;40.0;Facu
+27/7/2019;14:57;2;Vino;100.0;Facu
+27/7/2019;14:57;2;Agua Mineral;40.0;Facu
+27/7/2019;14:57;2;Agua Mineral;40.0;Facu
+27/7/2019;14:57;2;Gaseosa;50.0;Facu
+27/7/2019;14:57;2;Cerveza;80.0;Facu
+27/7/2019;14:57;2;Vino;100.0;Facu
+27/7/2019;14:57;2;Agua con gas;40.0;Facu
+27/7/2019;14:57;2;Coca Cola;50.0;Facu
+27/7/2019;14:57;2;Fernet;150.0;Facu
+27/7/2019;14:57;2;Papas Fritas;100.0;Facu
+27/7/2019;14:57;2;Milanesa;150.0;Facu
+27/7/2019;14:57;2;Hamburguesa;130.0;Facu
+27/7/2019;14:57;2;Pizza;150.0;Facu
+27/7/2019;14:57;2;Lomito;200.0;Facu
+27/7/2019;14:57;2;Choripan;150.0;Facu
+27/7/2019;14:57;2;Ensalada;100.0;Facu
+27/7/2019;14:57;2;Lomito;200.0;Facu
+27/7/2019;14:57;2;Helado;80.0;Facu
+27/7/2019;14:57;2;Flan;80.0;Facu
+27/7/2019;14:57;2;Flan;80.0;Facu
+27/7/2019;14:57;2;Ensalada de Fruta;60.0;Facu
+27/7/2019;14:57;2;Gelatina;40.0;Facu
+27/7/2019;14:57;2;Helado;80.0;Facu
+27/7/2019;14:57;2;Flan;80.0;Facu
+27/7/2019;14:57;2;Ensalada de Fruta;60.0;Facu
+27/7/2019;14:57;2;Gelatina;40.0;Facu
+27/7/2019;14:57;2;Vino;100.0;Facu
+27/7/2019;14:57;2;Agua Mineral;40.0;Facu
+27/7/2019;14:57;2;Agua Mineral;40.0;Facu
+27/7/2019;14:57;2;Gaseosa;50.0;Facu
+27/7/2019;14:57;2;Cerveza;80.0;Facu
+27/7/2019;14:57;2;Vino;100.0;Facu
+27/7/2019;14:57;2;Agua con gas;40.0;Facu
+27/7/2019;14:57;2;Coca Cola;50.0;Facu
+27/7/2019;14:57;2;Fernet;150.0;Facu
+27/7/2019;14:57;2;Papas Fritas;100.0;Facu
+27/7/2019;14:57;2;Milanesa;150.0;Facu
+27/7/2019;14:57;2;Hamburguesa;130.0;Facu
+27/7/2019;14:57;2;Pizza;150.0;Facu
+27/7/2019;14:57;2;Lomito;200.0;Facu
+27/7/2019;14:57;2;Choripan;150.0;Facu
+27/7/2019;14:57;2;Ensalada;100.0;Facu
+27/7/2019;14:57;2;Lomito;200.0;Facu
+29/7/2019;11:11;1;Hamburguesa;130.0;Licho
+29/7/2019;11:11;1;Milanesa;150.0;Licho
